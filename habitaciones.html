@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/FavIcon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Royal Hotel</title>
+</head>
+<!----------------------------------------------------------------BODY------------------------------------------------------------->
+<body>
+    <!------------------------------------------------------------HEADER-------------------------------------------------------------->
+    <header  class="headerindex">
+      <h1>Royal Hotel</h1>
+      <nav class="navright">
+      <div class="nav-menu"> 
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+              <i class="menu-icon"><img src="./src/MenuHamb.png" alt=""></i>
+          </label>
+          <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="habitaciones.html">Habitaciones</a></li>
+              <li><a href="restaurante.html">Restaurante</a></li>
+              <li><a href="piscina.html">Piscina</a></li>
+              <li><a href="ubicacion.html" >Ubicación</a></li>
+          </ul>
+      </nav>
+  </div> 
+  </header>
+    <!------------------------------------------------------------FIN-HEADER-------------------------------------------------------------->
+
+<!------------------------------------------------------------MAIN-------------------------------------------------------------->
+  <main class="mainhabitaciones ">
+    <!----------------------------------------------------GRID------------------------->
+<div class="galeriagrid">
+    <section >
+      <h2 id="galeria" >Conozca nuestras habitaciones</h2>
+      <span class="linea"></span>
+      <section class="galeriahab">
+          <a class="#image1" href="" src="">
+              <img src="./imagen/BgImgHotel.jpg" alt="" >
+          </a>
+          <a class="#image2" href="" src="">
+              <img src="./imagen/fondomainhab.avif" alt="">
+          </a>
+          <a class="#image3" href="" src="">
+              <img src="./imagen/HabitacionDeLujo.jpg" alt="">
+              </a>
+          <a class="#image4" href="" src=""> 
+              <img src="./imagen/HabitacionSupeior.jpg" alt="">
+          </a>
+          <a class="#image5" href="" src="">
+            <img src="./imagen/Piscina.jpeg" alt="">
+        </a>
+        <a class="#image6" href="" src="">
+            <img src="./imagen/RestDOS340x340.jpg" alt="">
+        </a>
+        <a class="#image7" href="" src="">
+            <img src="./imagen/Servicios.jpg" alt="">
+            </a>
+        <a class="#image8" href="" src=""> 
+            <img src="./galeria/img_2.jpg" alt="">
+        </a>
+        <a class="#image9" href="" src=""> 
+          <img src="./imagen/Contacto.jpg" alt="">
+      </a>
+      <a class="#image10" href="" src=""> 
+        <img src="./imagen/Lobby.jpg" alt="">
+    </a>
+      </section>
+  </section>
+
+  <article class="lightbox" id="image1">
+      <a href="#image10" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+        <img src="./imagen/BgImgHotel.jpg" alt="">
+      <a href="#image2" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+    <a href="#" class="cerrar">X</a>  
+  </article>
+
+  <article class="lightbox" id="image2">
+    <a href="#image1" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+      <img src="./imagen/fondomainhab.avif" alt="">
+    <a href="#image3" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+  <a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image3">
+  <a href="#image2" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./imagen/HabitacionDeLujo.jpg" alt="">
+  <a href="#image4" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image4">
+  <a href="#image3" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./imagen/HabitacionSupeior.jpg" alt="">
+  <a href="#image5" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image5">
+  <a href="#image4" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./imagen/Piscina.jpeg" alt="">
+  <a href="#image6" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image6">
+  <a href="#image5" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./imagen/RestDOS340x340.jpg" alt="">
+  <a href="#image7" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image7">
+  <a href="#image6" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./imagen/Servicios.jpg" alt="">
+  <a href="#image8" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image8">
+  <a href="#image7" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./galeria/img_2.jpg" alt="">
+  <a href="#image9" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image9">
+  <a href="#image8" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./imagen/Contacto.jpg" alt="">
+  <a href="#image10" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+<article class="lightbox" id="image10">
+  <a href="#image9" class="siguiente"><i class="fa-solid fa-arrow-left"></i></a>
+    <img src="./imagen/Lobby.jpg" alt="">
+  <a href="#image1" class="siguiente"><i class="fa-solid fa-arrow-right-long"></i></a>
+<a href="#" class="cerrar">X</a>  
+</article>
+
+
+  <script src="https://kit.fontawesome.com/6c602a2c33.js" crossorigin="anonymous"></script>
+</div>
+  <!--------------------------------------------------FIN--GRID------------------------->
+
+  <section class="cajahadetallehab">
+      <div class="detallehab">
+        <h2 id="h2detallehab">Detalle de las habitaciones</h2>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam obcaecati distinctio veniam laboriosam. <br>
+      Itaque voluptatum omnis cum officiis quibusdam perferendis deserunt delectus natus,<br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam obcaecati distinctio veniam laboriosam. <br>
+      Itaque voluptatum omnis cum officiis quibusdam perferendis deserunt delectus natus,<br>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti totam obcaecati distinctio veniam laboriosam. <br>
+      Itaque voluptatum omnis cum officiis quibusdam perferendis deserunt delectus natus,<br>
+    </div>
+  </section>
+  </main>
+<!------------------------------------------------------------FIN-MAIN-------------------------------------------------------------->
+
+<!--------------------------------------------------------------FOOTER-------------------------------------------------------------->
+<footer class="colorfooter">
+  <h3>Seguinos en nuestras redes</h3>
+  <div class="mediacontainer "> 
+          <a href="https://www.facebook.com/" target="_blank"><img src="./src/social-facebook-button-blue-icon.png" alt=""></a>
+          <a href="https://twitter.com/" target="_blank"><img src="./src/twitter-icon.png" alt=""></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./src/Instagram-icon.png" alt=""></a>
+  </div>
+</footer>
+<!------------------------------------------------------------FIN-FOOTER-------------------------------------------------------------->
+  
+</body>
+<!------------------------------------------------------------FIN-BODY-------------------------------------------------------------->
+
+</html>

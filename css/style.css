@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+/*------------------------------------------------------------BODY-INDEX--------------------------------------------------------------*/
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+/*------------------------------------------------------------FIN-BODY-INDEX--------------------------------------------------------------*/
+/*---------------------------------------------------------------HEADER--------------------------------------------------------------*/
+.headerindex{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.headerindex h1{
+    width: 33%;
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+
+}
+
+.navright{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+.navright li{
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.navright a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.navright a:hover{
+    color: black;
+    transition: all 0.8s;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+.menu-icon, #check{
+    display: none; 
+}
+@media (max-width:768px) {
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul{
+        margin-top: 10px;
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: 100%;
+        width: 100% ;
+        height: 100vh;
+        right: -100%;
+    }
+    /* .nav-menu ul a {
+        color: black;
+    } */
+    .nav-menu ul li{
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li:nth-last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left:0;
+        transition: all 0.25s; 
+    }
+
+
+}
+
+
+
+/*------------------------------------------------------------FIN-HEADER--------------------------------------------------------------*/
+/*------------------------------------------------------------MAIN-INDEX--------------------------------------------------------------*/
+.mainindex{
+    width: 100%;
+    min-height: calc(100vh - 20vh);
+    /* background-image: url("https://images.unsplash.com/photo-1528772822659-a1701f579ef1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80   "); */
+    background-color: rgba(127, 146, 255, 0.521);
+    background-position: 50% 90%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------- GRID ---------------------------------*/
+
+#galeria{
+    height: 30vh;
+    font-weight: 400px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+}
+.linea{
+    background: black; 
+    height: 2px;
+    width: 100%;
+    display: block;
+
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.galeria a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.galeria a :hover{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+
+
+/*-----------------FIN - GRID ---------------------------------*/
+/*-----------------------------------------------------------FIN-MAIN-INDEX--------------------------------------------------------------*/
+/*-----------------------------------------------------------MAIN-HABITACIONES--------------------------------------------------------------*/
+.mainhabitaciones{
+    width: 100%;
+    min-height: 40vh;
+    /* background-image: url("https://images.unsplash.com/photo-1660898110706-4288ee70d8ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"); */
+    background-color: rgba(127, 146, 255, 0.521);
+    background-position: 50% 90%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+#h2detallehab{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cajahadetallehab{
+    border: solid;
+    margin: auto;
+    height: 30vh;
+    border: solid;
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.cajahadetallehab .detallehab{
+    margin: 10px;    
+    align-items: center;
+    justify-content: center; 
+
+}
+.galeriahab{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+.galeriahab img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.galeriahab a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+.galeriahab a :hover{
+    transform: rotate(10deg) scale(1.3);
+}
+.lightbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: transform .3s ease-in-out;
+    width: 100%;
+    height:100vh ;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+}
+.lightbox img{
+    width: 75vh;
+    max-height: 70vh;
+}
+.lightbox:target{
+    transform: scale(1);
+}
+.cerrar{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: #851919;
+    color: #fff;
+    text-decoration: none ;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+.siguiente{
+    display: block;
+    background: #851919;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+    
+/*----------------------------------------------------------FIN-MAIN-HABITACIONES--------------------------------------------------------------*/
+/*----------------------------------------------------------MAIN-PISCINA--------------------------------------------------------------*/
+
+.mainpiscina{
+    width: 100%;
+    min-height: 40vh;
+    /* background-image: url("https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
+    background-color: rgba(127, 146, 255, 0.521);
+    background-position: 50% 90%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.tamañoimagenpiscina{
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0.5px solid;
+    /* border: 2px solid black; */
+    /* margin: 15px 15px 15px 15px; */
+    /* margin-left: 1rem; */
+    /* border-radius: 2rem; */
+
+}
+.ordenimagentextopiscina{
+    display: flex;
+    justify-content:row ;
+    border: solid black;
+}
+/*----------------------------------------------------------FIN-MAIN-PISCINA--------------------------------------------------------------*/
+/*----------------------------------------------------------MAIN-RESTAURANTE--------------------------------------------------------------*/
+
+.mainrest{
+    width: 100%;
+    min-height: 40vh;
+    /* background-image: url("https://images.unsplash.com/photo-1560624052-449f5ddf0c31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80"); */
+    background-color: rgba(127, 146, 255, 0.521);
+    background-position: 50% 90%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.tamañoimagenrest{
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0.5px solid;
+    /* border: 2px solid black; */
+    /* margin: 15px 15px 15px 15px; */
+    /* margin-left: 1rem; */
+    /* border-radius: 2rem; */
+
+}
+.ordenimagentextorest{
+    display: flex;
+    justify-content:row ;
+    border: solid black;
+}
+
+
+
+/*----------------------------------------------------------FIN-MAIN-RESTAURANTE--------------------------------------------------------------*/
+/*----------------------------------------------------------MAIN UBICACIÓN-Y-CONTACTO--------------------------------------------------------------*/
+.mainubicacion{
+    width: 100%;
+    min-height: 40vh;
+    /* background-image: url("https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"); */
+    background-color: rgba(127, 146, 255, 0.521);
+    background-position: 50% 90%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.tamañoimagenubicacion{
+    width: 40vw;
+    height: 40vh;
+    object-fit: cover;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 0.5px solid;
+    /* border: 2px solid black; */
+    /* margin: 15px 15px 15px 15px; */
+    /* margin-left: 1rem; */
+    /* border-radius: 2rem; */
+
+}
+.ordenmapaform{
+    display: flex;
+    justify-content: row ;
+    border: solid black;
+} 
+
+
+/*----------------------------------------------------------FIN-MAIN-UBICACIÓN-Y-CONTACTO--------------------------------------------------------------*/
+/*------------------------------------------------------------FOOTER--------------------------------------------------------------*/
+.colorfooter{
+    background-color: brown;
+}
+h3{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+.mediacontainer {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+/*------------------------------------------------------------FIN-FOOTER--------------------------------------------------------------*/
+
+@media screen and (max-width:400px){
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+    }
+    .cerrar{
+        top:20px;
+        right: 20px;
+    }
+}
+@media screen and (max-width:600px) {
+    .nav{
+        flex-direction: column ;
+    }
+}
