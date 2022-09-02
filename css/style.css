@@ -191,10 +191,10 @@ body{
 
 @media (max-width: 471px) {
     #galeria{
-     justify-content: end;
-     text-align: end;
+    font-size: 25px;
+    justify-content: end;
+    text-align: end;
      margin-right: 45px;
-     font-size: 25px;
     }
 }
 
