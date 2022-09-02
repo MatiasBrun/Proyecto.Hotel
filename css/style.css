@@ -73,6 +73,14 @@ body{
     font-size: 22px;
     }
 }
+@media (max-width: 471px) {
+    .navright a{
+        font-family: cursive;
+        text-decoration: none;
+        color: aliceblue;
+        font-size: medium;
+    }
+}
 
 
 
@@ -183,7 +191,10 @@ body{
 
 @media (max-width: 471px) {
     #galeria{
-    font-size: 20px;
+     justify-content: end;
+     text-align: end;
+     margin-right: 45px;
+     font-size: 25px;
     }
 }
 
