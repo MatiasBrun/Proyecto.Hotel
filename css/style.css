@@ -22,11 +22,20 @@ body{
     background-color: rgba(0, 0, 0, 0.479);
 }
 .headerindex h1{
-    width: 33%;
+    width: auto;
     text-align: center;
     font-size: 35px;
     color: aliceblue;
+    font-family: cursive;
+    margin: 20px;
+}
+.headerindex h1:hover{
+    color: black;
+    transition: all 0.8s;
+}
 
+.h1a{
+    text-decoration: none;
 }
 
 .navright{
@@ -43,6 +52,7 @@ body{
 }
 
 .navright a{
+    font-family: cursive;
     text-decoration: none;
     color: aliceblue;
 }
@@ -122,7 +132,8 @@ body{
     font-weight: 400px;
     text-align: center;
     padding: 20px 0;
-    font-size: 40px;
+    font-size: 30px;
+    font-family: cursive;
 }
 .linea{
     background: black; 
@@ -150,8 +161,11 @@ body{
 }
 .galeria a{
     display: block;
+    text-decoration: none;
+    color: black;
     position: relative;
     overflow: hidden;
+    font-family: cursive;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 .galeria a :hover{
