@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./src/FavIcon.png">
-    <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/style.css">
     <title>Royal Hotel</title>
 </head>
 <!----------------------------------------------------------------BODY------------------------------------------------------------->
@@ -39,28 +38,48 @@
     <h2 id="galeria">¡Ubicación y Contacto!</h2>
     <span class="linea"></span>
 
-    <div class="ordenmapaform">
-    <form action="">
-      <fieldset>
-        <legend>Forme parte de la familia Royal</legend>
 
-        <label for="">Nombre</label>
-        <input type="text" placeholder="Nombre">
-        <label for="">Telefono</label>
-        <input type="number" placeholder="telefono">
-        <label for="">Email</label>
-        <input type="email" name="" id="" placeholder="ejemplo@email.com">
-        <textarea name="" id="" cols="30" rows="10">Deje un comentario</textarea>
-        <button>Enviar</button>
-        <button type="reset">Borrar</button>
+    <section class="py-3 typeform">
+        <div class="container-form">
+          <h3>"Sumate a nuestro equipo contactandonos o acercandote"</h3>
+          <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-8">
+              <form class="row g-3">
+                <div class="col-md-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
 
-      </fieldset>
-    </form>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.850080552875!2d-57.53444429999999!3d-38.027274399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584ddcba3df408f%3A0x8885742d652ee110!2sSaavedra%20110%2C%20B7602GHD%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1659737167463!5m2!1ses-419!2sar"
-      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Dirección</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Dirección 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Ciudad</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">País</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Elegir...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+              </form>
+            </article>
+            <article class="col-sm-12 col-md-12 col-lg-4">
+              <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3142.850080552875!2d-57.53444429999999!3d-38.027274399999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584ddcba3df408f%3A0x8885742d652ee110!2sSaavedra%20110%2C%20B7602GHD%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1659737167463!5m2!1ses-419!2sar"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+          </div><!--termina row-->
+        </div><!--termina contenedor-->
+    </section>
   </main>
   <!-------------------------------------------------------------------Fin del main ---------------------------------------------------------->
 
