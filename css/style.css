@@ -124,6 +124,7 @@ h1:hover{
     align-items: center;
     justify-content: space-around;
     margin-bottom: 20px;
+    
 }
 @media  (max-width: 650px){
     .ubicacioncard{
@@ -238,6 +239,9 @@ h1:hover{
 #shahow-card{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
+#margin-card{
+    margin: 20px;
+}
 
     
 /*----------------------------------------------------------FIN-MAIN-HABITACIONES--------------------------------------------------------------*/
@@ -314,6 +318,9 @@ h1:hover{
 }
 .container-rest{
     margin: 20px;
+}
+#margin-img{
+    margin-bottom: 20px;
 }
 
 
