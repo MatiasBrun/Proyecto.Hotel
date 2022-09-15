@@ -353,11 +353,13 @@ h1:hover{
     height: auto;
     background-color: rgba(128, 128, 128, 0.623);
     display: flex;
-    justify-content:center;
+    justify-content:flex-end;
     align-items: center;
     margin: 20px;   
 }
-
+.marginh3{
+    margin-bottom: 30px;
+}
 
 /*----------------------------------------------------------FIN-MAIN-UBICACIÓN-Y-CONTACTO--------------------------------------------------------------*/
 /*------------------------------------------------------------FOOTER--------------------------------------------------------------*/
