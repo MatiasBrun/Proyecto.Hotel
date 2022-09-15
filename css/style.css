@@ -56,7 +56,7 @@ h1:hover{
 /*----------------- GRID ---------------------------------*/
 
 #galeria{
-    height: 30vh;
+    height: 15vh;
     font-weight: 400px;
     text-align: center;
     padding: 20px 0;
@@ -258,23 +258,8 @@ h1:hover{
     display: flex;
     flex-direction: column;
 }
-
-.tamañoimagenpiscina{
-    width: 40vw;
-    height: 40vh;
-    object-fit: cover;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    border: 0.5px solid;
-
-
-}
-.ordenimagentextopiscina{
-    display: flex;
-    justify-content:row ;
-    border: solid black;
+#margin-cards{
+    margin: 20px;
 }
 
 /*----------------------------------------------------------FIN-MAIN-PISCINA--------------------------------------------------------------*/
