@@ -1,0 +1,30 @@
+.bg-navcolor{
+    background-color: $maincolor;
+    background-image: linear-gradient(289deg, #1200e9 0%, #80D0C7 100%);
+    &:hover{
+        color: $fourColor;
+        transition: all 0.8s;
+    } 
+
+}
+h1 {
+    width: 200px;
+    font-family: $mainFont;
+    color: $thirdColor;
+    &:hover{
+        color:$fourColor;
+        transition: all 0.8s;
+    }
+}
+
+
+#nav-items a{
+    color: $fiveColor;
+    font-size: 20px;
+    &:hover{
+        color: $fourColor;
+        transition: all 0.8s;
+        
+    }
+}
+

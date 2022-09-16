@@ -1,51 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+// vars esquema de color
+$maincolor:#1200e9;
+$secondaryColor:#FF3CAC;
+$thirdColor:aliceblue;
+$fourColor:black;
+$fiveColor:whitesmoke;
+$keyColor:#1200e9;
+
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
 }
-/*------------------------------------------------------------BODY-INDEX--------------------------------------------------------------*/
+
 body{
     width: 100%;
     height: 100%;
     font-size: 16px;
 }
-/*------------------------------------------------------------FIN-BODY-INDEX--------------------------------------------------------------*/
-/*---------------------------------------------------------------HEADER--------------------------------------------------------------*/
-.bg-navcolor{
-    background-color: #1200e9;
-    background-image: linear-gradient(289deg, #1200e9 0%, #80D0C7 100%);
-}
-h1 {
-    width: 200px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: aliceblue;
-}
-h1:hover{
-    color: black;
-    transition: all 0.8s;
-} 
 
-#nav-items a{
-    color: whitesmoke;
-    font-size: 20px;
-}
-#nav-items a:hover{
-    color: black;
-    transition: all 0.8s;
-    
-}
+
+//a partir de acá no me toma los cambios
 
 
 
-/*------------------------------------------------------------FIN-HEADER--------------------------------------------------------------*/
 /*------------------------------------------------------------MAIN-INDEX--------------------------------------------------------------*/
 .mainindex{
     width: 100%;
     min-height: calc(100vh - 20vh);
-    /* background-image: url("https://images.unsplash.com/photo-1528772822659-a1701f579ef1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80   "); */
-    background-color: #FF3CAC;
+    background-color: $secondaryColor;
     background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
     background-position: 50% 90%;
     background-size: cover;
@@ -78,25 +62,27 @@ h1:hover{
     grid-gap: 10px;
     padding: 40px 0;
     overflow: hidden;
+    a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        overflow: hidden;
+        font-family: cursive;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+    
+    img{
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+    
 }
 
-.galeria img{
-    width: 100%;
-    vertical-align: top;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.5s;
-}
-.galeria a{
-    display: block;
-    text-decoration: none;
-    color: black;
-    position: relative;
-    overflow: hidden;
-    font-family: cursive;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-
+//Hover se dejo fuera de la anidacion galeria porque la rompia
 .galeria a :hover{
     filter: blur(2px);
     transform: rotate(10deg) scale(1.3);
@@ -110,7 +96,6 @@ h1:hover{
 .mainhabitaciones{
     width: 100%;
     min-height: 40vh;
-    /* background-image: url("https://images.unsplash.com/photo-1660898110706-4288ee70d8ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"); */
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     
@@ -166,24 +151,29 @@ h1:hover{
     grid-gap: 10px;
     padding: 40px 0;
     overflow: hidden;
+    img{
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+    a{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
 }
 
-.galeriahab img{
-    width: 100%;
-    vertical-align: top;
-    height: 300px;
-    object-fit: cover;
-    transition: transform 0.5s;
-}
-.galeriahab a{
-    display: block;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
+
+//Hover se dejo fuera de la anidacion galeria porque la rompia
 .galeriahab a :hover{
     transform: rotate(10deg) scale(1.3);
 }
+
+
+//lightbox no funciona correctamente
 .lightbox{
     position: fixed;
     top: 0;
@@ -250,7 +240,6 @@ h1:hover{
 .mainpiscina{
     width: 100%;
     min-height: 40vh;
-    /* background-image: url("https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"); */
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     background-position: 50% 90%;
@@ -268,7 +257,6 @@ h1:hover{
 .mainrest{
     width: 100%;
     min-height: 40vh;
-    /* background-image: url("https://images.unsplash.com/photo-1560624052-449f5ddf0c31?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80"); */
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     background-position: 50% 90%;
@@ -306,7 +294,6 @@ h1:hover{
 .mainubicacion{
     width: 100%;
     min-height: 40vh;
-    /* background-image: url("https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"); */
     background-color: #0093E9;
     background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
     background-position: 50% 90%;
@@ -333,34 +320,3 @@ h1:hover{
     margin-bottom: 30px;
 }
 /*----------------------------------------------------------FIN-MAIN-UBICACIÓN-Y-CONTACTO--------------------------------------------------------------*/
-/*------------------------------------------------------------FOOTER--------------------------------------------------------------*/
-.colorfooter{
-    background-color: #1200e9;
-    background-image: linear-gradient(160deg, #1200e9 0%, #80D0C7 100%);
-    }
-h3{
-    width: 100%;
-    height: 5vh;
-    text-align: center;
-}
-.mediacontainer {
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-}
-/*------------------------------------------------------------FIN-FOOTER--------------------------------------------------------------*/
-
-@media screen and (max-width:400px){
-    .galeria{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
-    }
-    .cerrar{
-        top:20px;
-        right: 20px;
-    }
-}
-@media screen and (max-width:600px) {
-    .nav{
-        flex-direction: column ;
-    }
-}
