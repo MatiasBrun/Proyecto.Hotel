@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+$mainFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$secondaryFont: cursive;
+
+.mainindex{
+    width: 100%;
+    min-height: calc(100vh - 20vh);
+    background-color: $secondaryColor;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-position: 50% 90%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------------- GRID ---------------------------------*/
+
+#galeria{
+    height: 15vh;
+    font-weight: 400px;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-family: cursive;
+}
+.linea{
+    background: black; 
+    height: 2px;
+    width: 100%;
+    display: block;
+
+}
+.galeria{
+    @extend .galeriahab;
+    a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        position: relative;
+        overflow: hidden;
+        font-family: cursive;
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+    
+    img{
+        width: 100%;
+        vertical-align: top;
+        height: 300px;
+        object-fit: cover;
+        transition: transform 0.5s;
+    }
+    
+}
+
+//Hover se dejo fuera de la anidacion galeria porque la rompia
+.galeria a :hover{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}

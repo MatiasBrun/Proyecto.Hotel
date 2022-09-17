@@ -26,204 +26,22 @@ body{
     align-items: $align;
     justify-content: $justify;
 }
+//@include flex( , , );
 
-
-
-/*------------------------------------------------------------MAIN-INDEX--------------------------------------------------------------*/
-.mainindex{
-    width: 100%;
-    min-height: calc(100vh - 20vh);
-    background-color: $secondaryColor;
-    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
-    background-position: 50% 90%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-/*----------------- GRID ---------------------------------*/
-
-#galeria{
-    height: 15vh;
-    font-weight: 400px;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    font-family: cursive;
-}
-.linea{
-    background: black; 
-    height: 2px;
-    width: 100%;
-    display: block;
-
-}
-.galeria{
-    @extend .galeriahab;
-    a{
-        display: block;
-        text-decoration: none;
-        color: black;
-        position: relative;
-        overflow: hidden;
-        font-family: cursive;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    }
-    
-    img{
-        width: 100%;
-        vertical-align: top;
-        height: 300px;
-        object-fit: cover;
-        transition: transform 0.5s;
-    }
+@mixin tamañoimagenes ($width,$height,$object-fit,$margin-top,
+$margin-left,$margin-right,$margin-bottom,$border){
+    width:$width ;
+    height: $height;
+    object-fit: $object-fit;
+    margin-top: $margin-top;
+    margin-left: $margin-left;
+    margin-right: $margin-right;
+    margin-bottom: $margin-bottom;
+    border: $border;
     
 }
+//@mixin tamañoimagenes (,,,,,,,);
 
-//Hover se dejo fuera de la anidacion galeria porque la rompia
-.galeria a :hover{
-    filter: blur(2px);
-    transform: rotate(10deg) scale(1.3);
-}
-
-
-
-
-/*-----------------FIN - GRID ---------------------------------*/
-/*-----------------------------------------------------------FIN-MAIN-INDEX--------------------------------------------------------------*/
-/*-----------------------------------------------------------MAIN-HABITACIONES--------------------------------------------------------------*/
-.mainhabitaciones{
- @extend .mainindex;
-}
-.ubicacioncard{
-   @include flex(flex,center ,space-around);
-    margin-bottom: 20px;
-    
-}
-@media  (max-width: 650px){
-    .ubicacioncard{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-        margin-bottom: 20px;
-    }
-}
-
-#h2detallehab{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-.cajahadetallehab{
-    border: solid;
-    margin: auto;
-    height: 30vh;
-    border: solid;
-    display: flex;
-    margin-bottom: 10px;
-
-}
-.cajahadetallehab .detallehab{
-    margin: 10px;    
-    align-items: center;
-    justify-content: center; 
-
-}
-.galeriahab{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
-    margin: auto;
-    grid-gap: 10px;
-    padding: 40px 0;
-    overflow: hidden;
-    img{
-        width: 100%;
-        vertical-align: top;
-        height: 300px;
-        object-fit: cover;
-        transition: transform 0.5s;
-    }
-    a{
-        display: block;
-        position: relative;
-        overflow: hidden;
-        box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-    }
-}
-
-
-//Hover se dejo fuera de la anidacion galeria porque la rompia
-.galeriahab a :hover{
-    transform: rotate(10deg) scale(1.3);
-}
-
-
-//lightbox no funciona correctamente
-.lightbox{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-    transition: transform .3s ease-in-out;
-    width: 100%;
-    height:100vh ;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0);
-}
-.lightbox img{
-    width: 75vh;
-    max-height: 70vh;
-}
-.lightbox:target{
-    transform: scale(1);
-}
-.cerrar{
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    background: #851919;
-    color: #fff;
-    text-decoration: none ;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-}
-
-.siguiente{
-    display: block;
-    background: #851919;
-    color: #fff;
-    height: 30px;
-    width: 30px;
-    line-height: 30px;
-    text-decoration: none;
-    text-align: center;
-}
-#animacion-cardhab:hover{
-	transform: translate(20px,-30px);
-	cursor: pointer;
-	transition: transform 1s;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-#shahow-card{
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
-}
-#margin-card{
-    margin-bottom: 20px;
-}
-
-    
-/*----------------------------------------------------------FIN-MAIN-HABITACIONES--------------------------------------------------------------*/
 /*----------------------------------------------------------MAIN-PISCINA--------------------------------------------------------------*/
 
 .mainpiscina{
@@ -237,18 +55,11 @@ body{
 /*----------------------------------------------------------MAIN-RESTAURANTE--------------------------------------------------------------*/
 
 .mainrest{
-  @extend .mainhabitaciones;
+    @extend .mainhabitaciones;
 }
 
 .tamañoimagenrest{
-    width: 40vw;
-    height: 40vh;
-    object-fit: cover;
-    margin-top: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    margin-bottom: 0.5rem;
-    border: 0.5px solid;
+    @include tamañoimagenes(40vh, 40vh, cover, 0.5rem,0.5rem,0.5rem,0.5rem,0.5px solid )
 
 }
 .ordenimagentextorest{
@@ -269,8 +80,6 @@ body{
 .mainubicacion{
     @extend .mainindex;
 }
-
-
 .container-form{
     margin-bottom:20px ;
     display: flex;
