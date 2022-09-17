@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-/*$mainFont: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
-/*$secondaryFont: cursive;*/
+$secondaryFont: cursive;
 
 .mainindex{
     width: 100%;
@@ -22,7 +21,7 @@
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
-    font-family: cursive;
+    font-family: $secondaryFont;
 }
 .linea{
     background: black; 
@@ -39,7 +38,7 @@
         color: black;
         position: relative;
         overflow: hidden;
-        font-family: cursive;
+        font-family: $secondaryFont;
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
     }
     

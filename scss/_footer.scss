@@ -1,19 +1,4 @@
 
-.colorfooter{
-    background-color: map-get($map:$paleta, $key:'cuatro');		
-    background-image: linear-gradient(160deg, #1200e9 0%, #80D0C7 100%);
-    }
-
-    h3{
-    width: 100%;
-    height: 5vh;
-    text-align: center;
-}
-.mediacontainer {
-    width: 100%;
-    height: 10vh;
-    text-align: center;
-}
 //map/*
 $paleta:(
     'uno':#7CB9E8 ,
@@ -27,3 +12,20 @@ $paleta:(
     'nueve': #E9967A,
     'diez': #A51C30,
 );
+
+.colorfooter{
+    background-color: map-get($map:$paleta ,$key:'cuatro');		
+    background-image: linear-gradient(160deg, #1200e9 0%, #80D0C7 100%);
+    }
+
+    h3{
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+}
+.mediacontainer {
+    width: 100%;
+    height: 10vh;
+    text-align: center;
+}
+
