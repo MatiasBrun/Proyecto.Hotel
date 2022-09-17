@@ -20,7 +20,7 @@ body{
     font-size: 16px;
 }
 
-
+//mixins
 @mixin flex ($dire,$align,$justify) {
     display: $dire;
     align-items: $align;
