@@ -21,7 +21,11 @@ body{
 }
 
 
-//a partir de acá no me toma los cambios
+@mixin flex ($dire,$align,$justify) {
+    display: $dire;
+    align-items: $align;
+    justify-content: $justify;
+}
 
 
 
@@ -55,13 +59,7 @@ body{
 
 }
 .galeria{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
-    margin: auto;
-    grid-gap: 10px;
-    padding: 40px 0;
-    overflow: hidden;
+    @extend .galeriahab;
     a{
         display: block;
         text-decoration: none;
@@ -90,24 +88,15 @@ body{
 
 
 
+
 /*-----------------FIN - GRID ---------------------------------*/
 /*-----------------------------------------------------------FIN-MAIN-INDEX--------------------------------------------------------------*/
 /*-----------------------------------------------------------MAIN-HABITACIONES--------------------------------------------------------------*/
 .mainhabitaciones{
-    width: 100%;
-    min-height: 40vh;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    
-    background-position: 50% 90%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+ @extend .mainindex;
 }
 .ubicacioncard{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+   @include flex(flex,center ,space-around);
     margin-bottom: 20px;
     
 }
@@ -238,14 +227,7 @@ body{
 /*----------------------------------------------------------MAIN-PISCINA--------------------------------------------------------------*/
 
 .mainpiscina{
-    width: 100%;
-    min-height: 40vh;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    background-position: 50% 90%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+    @extend .mainindex;
 }
 #margin-cards{
     margin: 20px;
@@ -255,14 +237,7 @@ body{
 /*----------------------------------------------------------MAIN-RESTAURANTE--------------------------------------------------------------*/
 
 .mainrest{
-    width: 100%;
-    min-height: 40vh;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    background-position: 50% 90%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+  @extend .mainhabitaciones;
 }
 
 .tamañoimagenrest{
@@ -292,14 +267,7 @@ body{
 /*----------------------------------------------------------FIN-MAIN-RESTAURANTE--------------------------------------------------------------*/
 /*----------------------------------------------------------MAIN UBICACIÓN-Y-CONTACTO--------------------------------------------------------------*/
 .mainubicacion{
-    width: 100%;
-    min-height: 40vh;
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
-    background-position: 50% 90%;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+    @extend .mainindex;
 }
 
 
