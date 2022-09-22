@@ -66,6 +66,10 @@ body {
   margin-bottom: 30px;
 }
 
+#restwidht {
+  width: 100%;
+}
+
 /*----------------------------------------------------------FIN-MAIN-UBICACIÓN-Y-CONTACTO--------------------------------------------------------------*/
 .bg-navcolor {
   background-color: #1200e9;
@@ -277,6 +281,10 @@ h3 {
   line-height: 30px;
   text-decoration: none;
   text-align: center;
+}
+
+#widhtcard {
+  width: 18rem;
 }
 
 #animacion-cardhab:hover {
