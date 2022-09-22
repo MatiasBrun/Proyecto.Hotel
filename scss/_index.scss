@@ -54,6 +54,5 @@ $secondaryFont: cursive;
 
 //Hover se dejo fuera de la anidacion galeria porque la rompia
 .galeria a :hover{
-    filter: blur(2px);
     transform: rotate(10deg) scale(1.3);
 }
