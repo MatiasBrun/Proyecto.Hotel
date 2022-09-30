@@ -15,4 +15,4 @@ de no ejecutarse correctamente poner https://matiasbrun.github.io/Proyecto.Hotel
 
 Links: https://github.com/MatiasBrun/Proyecto.Hotel.git
        https://matiasbrun.github.io/Proyecto.Hotel/
-       
+       https://hotelderoyal.netlify.app/
